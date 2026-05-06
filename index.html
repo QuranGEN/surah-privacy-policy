@@ -317,14 +317,10 @@
             animation: pulse 3s infinite alternate;
         }
 
-        .logo-icon svg {
-            width: 18px;
-            height: 18px;
-            fill: none;
-            stroke: currentColor;
-            stroke-width: 2.5;
-            stroke-linecap: round;
-            stroke-linejoin: round;
+        .logo-icon img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
         }
 
         .theme-toggle {
@@ -748,10 +744,10 @@
             opacity: 1;
         }
 
-        .footer-logo svg {
-            width: 20px;
-            height: 20px;
-            stroke: var(--primary);
+        .footer-logo img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
         }
 
         .footer-text {
@@ -837,9 +833,7 @@
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
             <polyline points="22,6 12,13 2,6"></polyline>
         </symbol>
-        <symbol id="icon-play" viewBox="0 0 24 24">
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-        </symbol>
+
     </svg>
 
     <!-- Preloader -->
@@ -863,7 +857,7 @@
     <header class="header" id="header">
         <div class="logo">
             <div class="logo-icon">
-                <svg><use href="#icon-play"></use></svg>
+                <img src="nobg.png" alt="Surah Player Logo">
             </div>
             Surah Player
         </div>
@@ -1022,9 +1016,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
+                <img src="nobg.png" alt="Surah Player Logo">
                 Surah Player
             </div>
             <p class="footer-text">© 2026 Surah Player. Built with offline privacy in mind.</p>
